@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Systems</title>
+    <img class='tyrunt' src="img/Normal.png" onmouseover="this.src='img/Joyous.png';" onmouseout="this.src='img/Normal.png'">
+</head>
+<body>
+    <h1>Scrybe.</h1>
+
+    <div>
+        <ul>
+            <a href="index.html">Home</a>
+            <a class="active" href="systems.html">Systems</a>
+            <a href="houserules.html">House Rules</a>
+        </ul>
+    </div>
+
+    <div id="tooltips" hidden>
+        <div id="tip-bleed">Condition; A bleeding target takes 1d3 slashing damage at the end of their turn. This condition can stack and up to three stacks may activate at once, consuming that many stacks. You may use an action to stem the bleeding, removing three stacks of bleed and delaying additional stacks from activating until your next turn. This condition does not affect constructs, incorporeal creatures, or creatures that do not otherwise bleed.</div>
+        <div id="tip-impaired">Condition; A creature with the impaired condition receives a -2 to only the first saving throw or attack roll they make after becoming impaired. After either roll is made; for the sake of this and other abilities, that creature retains the impaired condition until combat ends, though the creature no longer suffers its effect.</div>
+        <div id="tip-bloodied">Condition; A creature that has less than or equal to half of their maximum hp has the bloodied condition.</div>
+        <div id="tip-masterwork">Keyword; If a weapon has the masterwork keyword, the weapon has the amateur modification associated with that weapons damage type.</div>
+        <div id="tip-rivalry">Condition; When a creature is inflicted with the rivalry condition, the targeting creature gains the rivalry condition as well. The targeting creature and their target have +2 to attack rolls against each other. To apply the rivalry condition, both creatures must be in ‘line-of-effect’ of each other (no visual obstructions between targeting creature and target creature). A creature may only have one rival at a time.</div>
+        <div id="tip-skill">Keyword; Compare your proficiency bonus to your ability modifier used by any weapon. The higher of the two values is your skill with that weapon.</div>
+        <div id="tip-rein">Condition; When a creatures is inflicted with the Rein condition, they lose movement by five times (X) feet.</div>
+        <div id="tip-flanked">Keyword; When you make a melee attack, for each ally within melee range of the target creature, gain +2 on attack rolls to a max of +6. This number is reduced by -2 for each of the enemies allies that are within 5 feet of the target, to a minimum of 0.</div>
+        <div id="tip-meter">Keyword; Weapons with the Meter keyword have a meter equal to the maximum value you can roll on those dice plus half of that value (i.e. greatsword deals 2d6, 6 + 6 = 12, half of 12 = 6, 12 + 6 = 18; meter = 18) To fill the meter, count damage dealt by only your weapons damage die (critical damage not included), when the meter reaches the max value the wielder gains the Flow State condition. This meter resets to 0 when combat ends. If you use an offhanded weapon, calculate the meter for that weapon and compare it to your main weapons meter. The larger value between the meters becomes the value for the combined meter.</div>
+        <div id="tip-flowstate">Condition; The Flow State condition improves certain weapon modifications and alterations.</div>
+    </div>
+
+    <h2>Notes:</h2>
+
+    <h3 class="rules">
+        Modifications
+    </h3>
+
+    <table class="rules">
+            <tr class="rules">
+                <th class="rules">Name</th>
+                <th class="rules">Tier</th>
+                <th class="rules">Restriction</th>
+                <th class="rules">Effect</th>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Slaying</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">Slashing</td>
+                <td class="rules">Inflict the <span class="tooltip" data-tooltip-id="tip-bleed">bleed</span> condition upon your target when you successfully hit a creature that you have dealt damage to with this weapon during this combat. This triggers once per turn.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Dauntless</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">Piercing</td>
+                <td class="rules">Inflict the <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> condition when you successfully hit a creature with this weapon.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Mighty</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">Bludgeoning</td>
+                <td class="rules">When an attack is successfully made with this weapon to either a construct, or creature wearing heavy armor, it deals additional damage equal to your proficiency bonus. Heavy armor includes half plate and scale mail for this purpose of this modification.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Studded</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">Shield</td>
+                <td class="rules">As a bonus action, a player may make an attack roll with thier shield using thier Strength modifier. On a hit, deal 1d4 bludgeoning damage and the target is inflicted with the <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> condition.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Rein</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">Bows, Crossbows</td>
+                <td class="rules">When dealing damage with this weapon, apply <span class="tooltip" data-tooltip-id="tip-rein">rein(1)</span>.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Exploit</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">All</td>
+                <td class="rules">When the target creature is <span class="tooltip" data-tooltip-id="tip-flanked">flanked</span>, gain +2 to attack rolls.</td>
+            </tr>
+            <tr class="rules">
+                <td class="rules">Adaptive</td>
+                <td class="rules">Amatuer</td>
+                <td class="rules">All</td>
+                <td class="rules">When you fail an attack roll against a creature, roll a 1d6 and add that to your next melee attack roll you make against that same creature. You may use this modification a number of times equal to your INT modifier to a minimum of 1. Uses replenish after a short rest.</td>
+            </tr>
+        </table> 
+
+
+
+
+        <script src="tooltip.js"></script>
+</body>
+</html>

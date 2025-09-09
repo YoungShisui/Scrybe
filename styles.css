@@ -1,0 +1,123 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(66, 55, 50);
+}
+
+img.tyrunt {
+    border: 1px solid black;
+    float: right;
+    transform: scaleX(-1);
+    width: 50px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+ul a {
+    display: block;
+    color: white;
+    background-color: rgb(144, 123, 97);
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul a:hover {
+    background-color: rgb(173, 118, 118);
+    color: white;
+}
+
+.active {
+    background-color: rgb(172, 100, 50);
+    color: white;
+}
+
+h3.rules {
+    background-color: rgb(184, 144, 90);
+    border:  2px solid black;
+    text-align:left;
+    text-indent: 5px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.rules {
+    background-color: rgb(255, 246, 196);
+    border:  2px solid black;
+    text-align: left;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    margin-top: -20px;
+}
+
+b.rules {
+    color: black;
+}
+
+em.rules {
+    color: darkgreen;
+}
+
+div.rules {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table.rules, th.rules, td.rules {
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid;
+    border-style: solid;
+    background-color: rgb(255, 246, 196);
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.tooltip {
+  position: relative;
+  cursor:help;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  transform: translateX(-100%);
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  z-index: 1;
+  font-size: 12px;
+  pointer-events: none;
+  font-family: 'Courier New', Courier, monospace;
+}
