@@ -1,6 +1,8 @@
 h1 {
     font-family: 'Courier New', Courier, monospace;
     color: beige;
+    display: block;
+    text-align: left;
 }
 
 p {
@@ -17,6 +19,8 @@ body {
 
 img.tyrunt {
     border: 1px solid black;
+    display: block;
+    margin: auto;
     float: right;
     transform: scaleX(-1);
     width: 50px;
