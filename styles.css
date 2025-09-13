@@ -123,6 +123,7 @@ table.rules, th.rules, td.rules {
 }
 
 .parent {
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
