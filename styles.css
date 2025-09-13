@@ -147,8 +147,8 @@ table.rules, th.rules, td.rules {
 .parent {
     margin-top: -30px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap:5px;
 }
     
@@ -158,21 +158,20 @@ table.rules, th.rules, td.rules {
 
 .div2 {
     grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 .div3 {
     grid-column: span 2 / span 2;
     grid-column-start: 1;
-    grid-row-start: 3;
+    grid-row-start: 2;
 }
 
 .div4 {
-    grid-column: span 2 / span 8;
-    grid-row: span 6 / span 6;
-    grid-column-start: 3;
-    grid-row-start: 1;
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
 }
 
 .divTxt {
@@ -184,11 +183,9 @@ table.rules, th.rules, td.rules {
 }
 
 select.weaponbox {
-    width: 125px;
-    height: 25px;
+    width: 100px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin-left: 20%;
     background-color: #333;
     color: #fff;
 }
