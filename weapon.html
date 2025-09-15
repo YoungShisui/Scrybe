@@ -87,35 +87,134 @@
     <div class="parent2">
         <div class="div2_1">
             <h3 class="rules">Effect</h3>
-            <div class="divAlt">Break
+               <div class="divBreak">  
+                    <div class="data-display" data-content="crushing">
+                        <p>Creature receives a -1 to their AC until the start of their next turn. Can only be applied once per round.</p>
+                    </div>
+
+                    <div class="data-display" data-content="harring" style="display:none;">
+                        <p>You can avoid one attack of opportunity per round, as long as it's your turn.</p>
+                    </div>
+
+                    <div class="data-display" data-content="overwhelming" style="display:none;">
+                        <p>Target takes 1d4 damage. The damage type is the same as your weapons.</p>
+                    </div>
+
+                    <div class="data-display" data-content="rupturing" style="display:none;">
+                        <p>Targets stacks of bleed activate immediately. </p>
+                    </div>
+
+                    <div class="data-display" data-content="severing" style="display:none;">
+                        <p>Creature receives a stack of bleed.</p>
+                    </div>
+
+                    <div class="data-display" data-content="staggering" style="display:none;">
+                        <p>Applies Rein(2)</p>
+                    </div>
+
+                    <div class="data-display" data-content="sensing" style="display:none;">
+                        <p>If the target has resistance to this weapons damage type, it loses it until the end of its next turn.</p>
+                    </div>
+                    <div class="data-display" data-content="surging" style="display:none;">
+                        <p>Weapon attacks deal an additional 1d4 damage. This damage type matches your weapons damage type.</p>
+                    </div>
+                    <div class="data-display" data-content="interupting" style="display:none;">
+                        <p>The target gains disadvantage on concentration checks from damage dealt by this weapon. </p>
+                    </div>
+                </div>
+        </div>
+            <div class="div2_2">
+                <h3 class="rules">Alteration</h3>
+                <div class="divBreak">
+                <select class="weaponbox" id="display-selector">
+                    <option value="crushing">Crushing</option>
+                    <option value="harring">Harring</option>
+                    <option value="overwhelming">Overwhelming</option>
+                    <option value="rupturing">Rupturing</option>
+                    <option value="severing">Severing </option>
+                    <option value="staggering">Staggering </option>
+                    <option value="sensing">Sensing</option>
+                    <option value="surging">Surging </option>
+                    <option value="interupting">Interupting</option>
+                </select>
+                </div>
             </div>
-        </div>
-        <div class="div2_2">
-            <h3 class="rules">Alteration</h3>
-            <select class="weaponbox" id="options" onchange="showTextBox()">
-                <option value="none">Select</option>
-                <option value="crushing" data-display="5(3)">Crushing</option>
-                <option value="harring" data-display="4(2)">Harring</option>
-                <option value="overwhelming" data-display="5(3)">Overwhelming</option>
-                <option value="rupturing" data-display="5(3)">Rupturing</option>
-                <option value="severing" data-display="4(3)">Severing </option>
-                <option value="staggering" data-display="3(0)">Staggering </option>
-                <option value="sensing" data-display="5(3)">Sensing</option>
-                <option value="surging" data-display="3(1)">Surging </option>
-                <option value="interupting" data-display="5(3)">Interupting</option>
-            </select>
-        </div>
         <div class="div2_3">
             <h3 class="rules">Break</h3>
             <div class="divBreak">
-                <div id="result"></div>
+                <div class="data-display" data-content="crushing">
+                    <p>5 (3)</p>
+                </div>
+
+                <div class="data-display" data-content="harring" style="display:none;">
+                    <p>4 (2)</p>
+                </div>
+
+                <div class="data-display" data-content="overwhelming" style="display:none;">
+                    <p>5 (3)</p>
+                </div>
+
+                <div class="data-display" data-content="rupturing" style="display:none;">
+                    <p>5 (3)</p>
+                </div>
+
+                <div class="data-display" data-content="severing" style="display:none;">
+                    <p>4 (3)</p>
+                </div>
+
+                <div class="data-display" data-content="staggering" style="display:none;">
+                    <p>3 (0)</p>
+                </div>
+
+                <div class="data-display" data-content="sensing" style="display:none;">
+                    <p>5 (3)</p>
+                </div>
+                <div class="data-display" data-content="surging" style="display:none;">
+                    <p>3 (1)</p>
+                </div>
+                <div class="data-display" data-content="interupting" style="display:none;">
+                    <p>5 (3)</p>
+                </div>
             </div>
         </div>
         <div class="div2_4">
             <h3 class="rules">Threshold</h3>
-            <div class="divAlt">
-                <div id="secondDisplay"></div>
+            <div class='divBreak'>
+                <div class="data-display" data-content="crushing">
+                    <p>Target has the impaired condition.</p>
+                </div>
+
+                <div class="data-display" data-content="harring" style="display:none;">
+                    <p>You move at least 15ft directly towards the target this turn.</p>
+                </div>
+
+                <div class="data-display" data-content="overwhelming" style="display:none;">
+                    <p>Target is flanked.</p>
+                </div>
+
+                <div class="data-display" data-content="rupturing" style="display:none;">
+                    <p>Target has three stacks of bleed.</p>
+                </div>
+
+                <div class="data-display" data-content="severing" style="display:none;">
+                    <p>Target has at least one stack of bleed.</p>
+                </div>
+
+                <div class="data-display" data-content="staggering" style="display:none;">
+                    <p>Target has the impaired condition.</p>
+                </div>
+
+                <div class="data-display" data-content="sensing" style="display:none;">
+                    <p>User has an Intelligence modifier of at least +2.</p>
+                </div>
+                <div class="data-display" data-content="surging" style="display:none;">
+                    <p>You have the bloodied condition.</p>
+                </div>
+                <div class="data-display" data-content="interupting" style="display:none;">
+                    <p>You have the flow state condition.</p>
+                </div>
             </div>
+            
         </div>
     </div>
 </div>
