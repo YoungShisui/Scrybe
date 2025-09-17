@@ -16,69 +16,128 @@
             <a href="index.html">Home</a>
             <a href="systems.html">Systems</a>
             <a href="houserules.html">House Rules</a>
-            <a class="active" href="weapon.html">Weapons</a>
+            <a class="active" href="weapon.html">Weapon System</a>
         </ul>
     </div>
 
+    <div id="tooltips" hidden>
+        <div id="tip-bleed">Condition; A bleeding target takes 1d3 slashing damage at the end of their turn. This condition can stack and up to three stacks may activate at once, consuming that many stacks. You may use an action to stem the bleeding, removing three stacks of bleed and delaying additional stacks from activating until your next turn. This condition does not affect constructs, incorporeal creatures, or creatures that do not otherwise bleed.</div>
+        <div id="tip-impaired">Condition; A creature with the impaired condition receives a -2 to only the first saving throw or attack roll they make after becoming impaired. After either roll is made; for the sake of this and other abilities, that creature retains the impaired condition until combat ends, though the creature no longer suffers its effect.</div>
+        <div id="tip-bloodied">Condition; A creature that has less than or equal to half of their maximum hp has the bloodied condition.</div>
+        <div id="tip-masterwork">Keyword; If a weapon has the masterwork keyword, the weapon has the amateur modification associated with that weapons damage type.</div>
+        <div id="tip-rivalry">Condition; When a creature is inflicted with the rivalry condition, the targeting creature gains the rivalry condition as well. The targeting creature and their target have +2 to attack rolls against each other. To apply the rivalry condition, both creatures must be in ‘line-of-effect’ of each other (no visual obstructions between targeting creature and target creature). A creature may only have one rival at a time.</div>
+        <div id="tip-skill">Keyword; Compare your proficiency bonus to your ability modifier used by any weapon. The higher of the two values is your skill with that weapon.</div>
+        <div id="tip-rein">Condition; When a creatures is inflicted with the Rein condition, they lose movement by five times (X) feet.</div>
+        <div id="tip-flanked">Keyword; When you make a melee attack, for each ally within melee range of the target creature, gain +2 on attack rolls to a max of +6. This number is reduced by -2 for each of the enemies allies that are within 5 feet of the target, to a minimum of 0.</div>
+        <div id="tip-meter">Keyword; Weapons with the Meter keyword have a meter equal to the maximum value you can roll on those dice plus half of that value (i.e. greatsword deals 2d6, 6 + 6 = 12, half of 12 = 6, 12 + 6 = 18; meter = 18) To fill the meter, count damage dealt by only your weapons damage die (critical damage not included), when the meter reaches the max value the wielder gains the Flow State condition. This meter resets to 0 when combat ends. If you use an offhanded weapon, calculate the meter for that weapon and compare it to your main weapons meter. The larger value between the meters becomes the value for the combined meter.</div>
+        <div id="tip-flowstate">Condition; The Flow State condition improves certain weapon modifications and alterations.</div>
+    </div>
+
     <h2 class="rules">Weapon System: Modifcations and Alterations</h2>
-
     <h2 class="weapon">Rules</h2>
-
     <p class="rules">The Weapon System allows for weapon smiths to make modifications and alterations to your weapons to enhance their capabilities. Each weapon can have one modification, and one alteration. Modifications offer a wide variety of effects, but some of them are restricted to certain weapon damage types, or weapon archetypes. When a restriction is listed as "All", this modification may be applied to any simple or martial weapons (shields and bows/crossbows not included). Alterations can be applied by any Journeyman, Master, or Artisan smiths. Alterations allow for Breaks, which trigger when using the weapon and rolling over the targets armor class by the listed amount. This amount can be reduced by fulfilling the alterations threshold requirement. Keywords and conditions are explained in the Keywords and Conditions section of this page.</p>
 
     <h2 class="weapon">Modifications</h2>
-
-    <div class="parent">
-
-        <div class="div1">
-            <h3 class="weapon">Tier</h3>
-            <select class="weaponbox" name="tier" id="weapon_type">
-                <option value="Select">Select</option>
-                <option value="Amatuer">Amatuer</option>
-                <option value="Journeyman">Journeyman</option>
-                <option value="Master">Master</option>
-                <option value="Artisan">Artisan</option>
-            </select>
-        </div>
-
-        <div class="div2">
-            <h3 class="weapon">Weapon Type</h3>
-            <select class="weaponbox" name="weapon_type" id="weapon_type">
-                <option value="Select">Select</option>
-                <option value="All">All</option>
-                <option value="Slashing">Slashing</option>
-                <option value="Piercing">Piercing</option>
-                <option value="Bludgeoning">Bludgeoning</option>
-                <option value="Swords">Swords</option>
-                <option value="Axes">Axes</option>
-                <option value="Hammers">Hammers</option>
-                <option value="Dagger">Dagger</option>
-                <option value="Arrows / Bolts">Arrows / Bolts</option>
-                <option value="Rapier">Rapier</option>
-                <option value="Spear">Spear</option>
-                <option value="Halberd">Halberd</option>
-                <option value="Glaive">Glaive</option>
-                <option value="Bow">Bow</option>
-                <option value="Crossbow">Crossbow</option>
-            </select>
-        </div>
-
-        <div class="div3">
-            <h3 class="weapon">Modification</h3>
-            <select class="weaponbox" name="modification" id="weapon_modification">
-                <option value="Select">Select</option>
-                <option value="Select2">Select2</option>
-            </select>
-        </div>
-
-        <div class="div4">
-            <h3 class="weapon">Description</h3>
+        <div>
             <div class="divTxt">
+                <div class="tableFixHead">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tier</th><th>Name</th><th>Restrictions</th><th>Effect</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                <tr><td>Amatuer</td><td>Adaptive</td><td>All</td><td>When you fail an attack roll against a creature, roll a 1d6 and add that to your next melee attack roll you make against that same creature. You may use this modification a number of times equal to your INT modifier to a minimum of 1. Uses replenish after a short rest.</td></tr>
+                                <tr><td>Amatuer</td><td>Dauntless</td><td>Piercing</td><td>Inflict the <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> condition when you successfully hit a creature with this weapon.</td></tr>
+                                <tr><td>Amatuer</td><td>Exploit</td><td>All</td><td>When the target creature is <span class="tooltip" data-tooltip-id="tip-flanked">flanked</span>, gain +2 to attack rolls.</td></tr>
+                                <tr><td>Amatuer</td><td>Mighty</td><td>Bludgeoning</td><td>When an attack is successfully made with this weapon to either a construct, or creature wearing heavy armor, it deals additional damage equal to your proficiency bonus. Heavy armor includes half plate and scale mail for this purpose of this modification.</td></tr>
+                                <tr><td>Amatuer</td><td>Rein</td><td>Bows, Crossbows</td><td>When dealing damage with this weapon, apply <span class="tooltip" data-tooltip-id="tip-rein">rein(1)</span>.</td></tr>
+                                <tr><td>Amatuer</td><td>Slaying</td><td>Slashing</td><td>Inflict the <span class="tooltip" data-tooltip-id="tip-bleed">bleed</span> condition upon your target when you successfully hit a creature that you have dealt damage to with this weapon during this combat. This triggers once per turn.</td></tr>
+                                <tr><td>Amatuer</td><td>Studded</td><td>Shield</td><td>As a bonus action, a player may make an attack roll with thier shield using thier Strength modifier. On a hit, deal 1d4 bludgeoning damage and the target is inflicted with the <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> condition.</td></tr>
+                                <tr><td>Journeyman</td><td>Acute</td><td>Rapiers</td><td>When you deal damage to a creature, if the target is <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> , add your proficiency bonus to the damage dealt. If the creature is not <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span>, apply the condition.</td></tr>
+                                <tr><td>Journeyman</td><td>Aegis</td><td>Shield</td><td>When you are targeted with a melee weapon, after the attack roll, you may roll 1d6 and add that to your AC for that attack. When you use this modification, you lose the bonus AC granted from the shield until the start of your next turn.</td></tr>
+                                <tr><td>Journeyman</td><td>Bold</td><td>Spears, Glaives</td><td>When you make a successful attack that makes use of the weapons range property, while you are out the of melee range of your target, you inflict the <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> condition and add your proficiency bonus to the deal.</td></tr>
+                                <tr><td>Journeyman</td><td>Breaker</td><td>Hammers</td><td>When dealing damage with a breaker weapon, if the target is smaller or the same size as the user, you may force the target to move 5ft in any direction other than into your square.</td></tr>
+                                <tr><td>Journeyman</td><td>Burst</td><td>All</td><td><span class="tooltip" data-tooltip-id="tip-meter">Meter</span>. When the wielder deals damage that would grant them the <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span> condition, they deal an extra 1d8 (1h) or 1d10 (2h) damage to the target. The wielder loses the <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span> condition, and the meter is set to 0. The damage dealt type by this effect is equal to the weapons damage type.</td></tr>
+                                <tr><td>Journeyman</td><td>Deft</td><td>Daggers</td><td>When you make a successful attack with a dagger using your attack action you may make an additional attack with that weapon with advantage. The damage from this attack does not add modifiers, but applies the <span class="tooltip" data-tooltip-id="tip-bleed">bleed</span> condition.</td></tr>
+                                <tr><td>Journeyman</td><td>Duelist</td><td>Swords, Rapiers</td><td>When there are three creatures or less within ten feet of you, you gain +1 to your AC and you may add your proficiency bonus to damage dealt.</td></tr>
+                                <tr><td>Journeyman</td><td>Focused</td><td>All</td><td>When you achieve <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span>, you gain + 1 to all of your saving throws.</td></tr>
+                                <tr><td>Journeyman</td><td>Gamblers</td><td>All</td><td>When you deal damage with this weapon, you may reroll the damage die once per attack. If you do, you must use the result. You may use this feature an equal amount of times to your intelligence modifier. Uses replenish on a long rest.</td></tr>
+                                <tr><td>Journeyman</td><td>Intercept</td><td>Shield</td><td>As a reaction, when an ally takes damage, roll 1d4 + your STR mod and reduce the damage taken by that amount.</td></tr>
+                                <tr><td>Journeyman</td><td>Killer</td><td>All</td><td>This weapon increases your critical range by 1 (i.e. 20 to 19).</td></tr>
+                                <tr><td>Journeyman</td><td>Lethal</td><td>All</td><td>When landing a critical hit, the extra die rolled are automatically max value.</td></tr>
+                                <tr><td>Journeyman</td><td>Menace</td><td>Axes, Halberds</td><td>When dealing damage to a creature with the <span class="tooltip" data-tooltip-id="tip-bloodied">bloodied</span>  condition, this weapon deals damage equal to your proficiency bonus.</td></tr>
+                                <tr><td>Journeyman</td><td>Opportune</td><td>All</td><td>When making an opportunity attack, gain +1 to hit and +1d6 damage matching your weapons damage type. Ignores any ability that prevents attacks of opportunity.</td></tr>
+                                <tr><td>Journeyman</td><td>Reflexive</td><td>Daggers, Rapiers</td><td><span class="tooltip" data-tooltip-id="tip-meter">Meter</span>. When you achieve <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span> you gain +2 to your AC until you are hit by an attack that would otherwise hit you if not for this ability. When this triggers, you lose <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span> and your <span class="tooltip" data-tooltip-id="tip-meter">meter</span> is reset to 0.</td></tr>
+                                <tr><td>Journeyman</td><td>Silver</td><td>All</td><td>Silver weapons bypass targets resistance or immunity to non-silvered weapons, when applicable.</td></tr>
+                                <tr><td>Journeyman</td><td>Stalwart</td><td>Shield</td><td>When <span class="tooltip" data-tooltip-id="tip-flanked">flanked</span>, this shield reduces incoming attack bonuses received from flanking by up to 4.</td></tr>
+                                <tr><td>Journeyman</td><td>Tower</td><td>Shield</td><td>This shields weight is doubled. You receive a +1 to AC when attacked from range.</td></tr>
+                                <tr><td>Journeyman</td>
+                                    <td>Weighted</td>
+                                    <td>Daggers</td>
+                                    <td>When you throw this weapon with an attack action, add +2 to the attack and damage roll. Dealing damage causes the <span class="tooltip" data-tooltip-id="tip-bleed">bleed</span> condition.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Brave</td>
+                                    <td>All</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.Once per turn, if you take the attack action, make an additional weapon attack.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Defiant</td>
+                                    <td>All</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.<span class="tooltip" data-tooltip-id="tip-meter">Meter</span>. When you achieve <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span>, your armor class increases by 1 and you deal 1d4 damage when you hit a creature while you have this condition. This abilities damage type is equal to your weapons damage type. You may expend your <span class="tooltip" data-tooltip-id="tip-meter">meter</span> and attack one additional time that same turn when you take the attack action.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>First Strike</td>
+                                    <td>Piercing</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>. When a creature enters your melee range, you make make an attack of opportunity at it. If an <span class="tooltip" data-tooltip-id="tip-impaired">impaired</span> creature makes a melee weapon attack against you, impose disadvantage on that creature. You may use this modification equal to your <span class="tooltip" data-tooltip-id="tip-skill">skill</span> with this weapon. </td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Noble</td>
+                                    <td>All</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.This weapon increases your critical range by 1 (i.e. 20 to 19).  Once per turn, you may add your <span class="tooltip" data-tooltip-id="tip-skill">skill</span> to the hit roll of this weapons attack.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Peerless</td>
+                                    <td>All</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.Once per turn, when dealing damage, if the die rolled is less than the dices average value, roll again and take the higher of the two rolls. Add your <span class="tooltip" data-tooltip-id="tip-skill">skill</span> to the damage.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Protective</td>
+                                    <td>All</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.<span class="tooltip" data-tooltip-id="tip-meter">Meter</span>. When you achieve <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span>, You gain +1 to hit and +1 to AC. When you make a saving throw, you can expend <span class="tooltip" data-tooltip-id="tip-flowstate">flow state</span> to gain a +5 to a saving throw.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Trample</td>
+                                    <td>Bludgeoning</td>
+                                    <td>???</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Vigilance</td>
+                                    <td>Slashing</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>. <span class="tooltip" data-tooltip-id="tip-bleed">Bleed</span> effects applied by this weapon use a 1d4 instead of a 1d3. Creatures with stacks of <span class="tooltip" data-tooltip-id="tip-bleed">bleed</span>, have a -1 to hit against the wielder of this weapon.</td>
+                                </tr>
+                                <tr><td>Master</td>
+                                    <td>Ward</td>
+                                    <td>Shield</td>
+                                    <td><span class="tooltip" data-tooltip-id="tip-masterwork">Masterwork</span>.You do not take extra damage from critical hits.</td>
+                                </tr>
+                                <tr><td>Artisan</td>
+                                    <td>Black Armory</td>
+                                    <td>Axes, Swords, Hammers</td>
+                                    <td>As a bonus action, a player may pull the trigger releasing the oil to coat their weapon. This process will take until the beginning of their next turn. As a free action, the player may spark the weapon. When enveloped in fire the weapon illuminates light 10 feet in radius and dim light for another 5 feet. This weapon remains lit for 1 minute (10 rounds). Additionally, when dealing damage with this weapon, deal an additional 1d4 fire damage. These weapons require the user to refill the oil reservoir after each use. Oil flasks are sold by the pint, which can be used to fill coat the weapon two times. Refueling the weapon requires an action.</td>
+                                </tr>
+                                <tr><td>Artisan</td>
+                                    <td>Compound</td>
+                                    <td>Bows</td>
+                                    <td>When dealing damage to a target, add your <span class="tooltip" data-tooltip-id="tip-skill">skill</span> value to the damage dealt.</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    </div>
             </div>
         </div>
-
-    </div>
-
     <h2 class="weapon">Alterations & Breaks</h2>
     <p class="rules"> Alterations: Alterations allow for weapons to cause a break when an attack exceeds a predetermined threshold above a targets AC. Smiths may apply an alteration to a weapon in addition to a modification.
  
@@ -277,6 +336,7 @@
                 <td class="rules">The Flow State condition improves certain weapon modifications and alterations.  </td>
             </tr>
         </table>
-    
+
+        <script src="tooltip.js"></script>
 </body>
 </html>

@@ -74,7 +74,7 @@ h3.rules {
 }
 
 h2.weapon {
-    background-color: rgb(212, 210, 209);
+    background-color: rgb(184, 144, 90);
     border:  2px solid black;
     font-family: 'Courier New', Courier, monospace;
     text-align:center;
@@ -146,36 +146,6 @@ table.rules, th.rules, td.rules {
   font-size: 12px;
   pointer-events: none;
   font-family: 'Courier New', Courier, monospace;
-}
-
-.parent {
-    margin-top: -40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap:0px;
-}
-    
-.div1 {
-    grid-column: span 2 / span 2;
-}
-
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-column: span 4 / span 4;
-    grid-row: span 3 / span 3;
-    grid-row-start: 3;
 }
 
 .divTxt {
@@ -256,3 +226,21 @@ select.weaponbox {
     display: inline-block;
     border-bottom: 1px solid black;
 }
+
+div.tier {
+    width: auto;
+    height: 100%;
+    background-color: rgb(255, 246, 196);
+    border: 2px solid black;
+    margin-top: -20px;
+    text-align: center;
+}
+
+
+.tableFixHead          { overflow: auto; height: 275px; width: auto;}
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+.tableFixHead tbody th { position: sticky; left: 0; }
+
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
