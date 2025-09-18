@@ -244,3 +244,14 @@ div.tier {
 table  { border-collapse: collapse; width: 100%; }
 th, td { padding: 8px 16px; }
 th     { background:#eee; }
+
+p.campaign {
+    background-color: rgb(255, 246, 196);
+    padding: 5px;
+    border:  2px solid black;
+    text-align: left;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    margin-top: -20px;
+}
