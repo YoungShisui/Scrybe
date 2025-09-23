@@ -8,7 +8,9 @@
     <script src="scripts.js" defer></script>
     <title>Scrybe</title>
     <img class='tyrunt' src="img/Normal.png" onmouseover="this.src='img/Joyous.png';" onmouseout="this.src='img/Normal.png'">
-    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
 <body>
 
@@ -29,10 +31,15 @@
     </div>
 
     <h2 class="rules">Tear</h2>
-    <div id = "sample" style = "width:900px; height:580px;"></div>
-
-
-    <script src="tooltip.js"></script>
+    
+    <div>
+        <p class="mapPreview">Tear - Political</p>
+        <img src="img/maps/tearPol.png" class="mapPreview" alt="tearPol" usemap="#tearPolMap">
+    </div>
+    <div>
+        <p class="mapPreview">Tear - Geographical</p>
+        <img src="img/maps/tearGeo.png" class="mapPreview" alt="tearGeo" usemap="#tearGeoMap">
+    </div>
 
 </body>
 </html>

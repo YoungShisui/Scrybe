@@ -256,3 +256,23 @@ p.campaign {
     margin-top: -20px;
 }
 
+
+
+img.mapPreview {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 25%;
+  margin-top: -15px;
+  background-color: rgb(255, 246, 196);
+}
+
+p.mapPreview {
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(184, 144, 90);
+    width: 25%;
+}
