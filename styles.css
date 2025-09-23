@@ -260,10 +260,10 @@ p.campaign {
 
 img.mapPreview {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 5px;
-  width: 25%;
-  margin-top: -15px;
+  width: 98%;
+  margin-top: -18px;
   background-color: rgb(255, 246, 196);
 }
 
@@ -271,8 +271,26 @@ p.mapPreview {
     border: 1px solid black;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
     background-color: rgb(184, 144, 90);
-    width: 25%;
+    width: 98%;
+}
+
+.mapParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    margin-top: -23px;
+}
+
+.divTearPol {     
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2; 
+}
+.divTearGeo {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
 }
