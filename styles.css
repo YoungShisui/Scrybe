@@ -294,3 +294,55 @@ p.mapPreview {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
 }
+
+.landingParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    margin-top: -23px;
+}
+
+.landing1 {     
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.landing2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+}
+
+.landing3 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.landing {
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 246, 196);
+}
+
+.citation {
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    width: 95%;
+    height: 70%;
+    background-color: rgb(184, 144, 90);
+}
+img.mapLanding {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    width: 95%;
+    margin-top: 5px;
+    background-color: rgb(255, 246, 196);
+}
