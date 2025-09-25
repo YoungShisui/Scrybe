@@ -297,7 +297,7 @@ p.mapPreview {
 
 .landingParent {
     display: grid;
-    background-color: #333;
+    background-color: lightgray;
     border: 2px solid black;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -379,3 +379,17 @@ select.pantheonbox {
     background-color: #333;
     color: #fff;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: #333;
+  border: 2px solid black;
+}
+.footer-container {
+  height: 100px;
+  width: 100vw;
+}   
