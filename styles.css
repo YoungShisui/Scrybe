@@ -353,14 +353,20 @@ img.mapLanding {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 div.pantheon {
     background-color: bisque;
     border: 1px solid black;
-    max-width: 30%;
+    width: 30%;
+}
+
+div.pantheonTxt {
+    background-color: red;
+    overflow: auto;
 }
 
 p.pantheon {
