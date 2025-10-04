@@ -297,41 +297,26 @@ p.mapPreview {
 
 .landingParent {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items:center;
-    background-color: lightgray;
-    border: 2px solid black;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
 }
 
-.landing1 {     
-    grid-column: span 3 / span 3;
-    grid-row: span 4 / span 4;
+div.landing {
+    margin: auto;
 }
 
-.landing3 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 5;
-}
-
-.landing2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-column-start: 4;
-    grid-row-start: 1;
-}
-
-.landing {
+p.landing {
     border: 1px solid black;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    align-content: center;
-    width: 100%;
-    height: auto;
     background-color: rgb(255, 246, 196);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.update {
+    border: 1px solid black;
+    background-color: darkorange;
+    color: black;
+    align-content: center;
 }
 
 .citation {
@@ -341,6 +326,7 @@ p.mapPreview {
     align-content: center;
     border: 1px solid black;
     background-color: rgb(184, 144, 90);
+    justify-content: stretch;
 }
 img.mapLanding {
     border: 1px solid black;
@@ -383,17 +369,3 @@ h1.pantheon {
 h2.pantheon {
     text-align: center;
 }
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 100px;
-  background-color: #333;
-  border: 2px solid black;
-}
-.footer-container {
-  height: 100px;
-  width: 100vw;
-}   
