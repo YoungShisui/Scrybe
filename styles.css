@@ -358,6 +358,7 @@ div.pantheonTxt {
 p.pantheon {
     background-color: bisque;
     padding: 5px;
+    text-align: center;
 }
 
 h1.pantheon {
