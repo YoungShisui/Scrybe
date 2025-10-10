@@ -4,45 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/Normal.png>" type="image/png">
     <script src="scripts.js" defer></script>
     <title>Scrybe</title>
     <img class='tyrunt' src="img/Normal.png" onmouseover="this.src='img/Joyous.png';" onmouseout="this.src='img/Normal.png'">
-     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
 </head>
 <body>
-
     
     <h1>Scrybe.</h1>
 
     <div>
         <ul>
             <a href="index.html">Home</a>
-            <a class="active" href="maps.html">xX Maps Xx</a>
+            <a href="maps.html">Maps</a>
             <a href="soe.html">SoE</a>
             <a href="aaradia.html">Aaradia</a>
             <a href="houserules.html">House Rules</a>
+            <a class="active" href="houseRules.html">xX House Rules Xx</a>
             <a href="weapon.html">Weapon System</a>
             <a href="bestiary.html">Bestiary</a>
             <a href="pantheon.html">Pantheon</a>
         </ul>
     </div>
-
-    <h2 class="rules">Tear</h2>
-
-    <div class="mapParent">
-        <div class="divTearPol"> 
-            <p class="mapPreview">Tear - Political</p>
-            <img src="img/maps/tearPol.png" class="mapPreview" alt="tearPol" usemap="#tearPolMap">
-        </div>
-        <div class="divTearGeo"> 
-            <p class="mapPreview">Tear - Geographical</p>
-            <img src="img/maps/tearGeo.png" class="mapPreview" alt="tearGeo" usemap="#tearGeoMap">
-        </div>
-    </div>
-
-
+    
+    <script src="tooltip.js"></script>
 </body>
 </html>
