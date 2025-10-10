@@ -117,6 +117,7 @@ p.rules {
     font-family: 'Courier New', Courier, monospace;
     white-space: pre-wrap;
     margin-top: -20px;
+    padding: 5px;
 }
 
 b.rules {
@@ -276,8 +277,6 @@ p.campaign {
     white-space: pre-wrap;
     margin-top: -20px;
 }
-
-
 
 img.mapPreview {
   border: 1px solid black;
@@ -440,4 +439,50 @@ label.diary {
 h2.diary {
     background-color: rgb(184, 144, 90);
     margin-top: 50px;
+}
+
+div.homebrewParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+div.homebrewChild {
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(255, 246, 196);
+    border: 2px solid black;
+    align-content: top;
+}
+
+p.homebrew {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding-left: 5px;
+}
+
+h2.homebrew {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -1px;
+    text-align: left;
+    padding-left: 5px;
+    background-color: rgb(184, 144, 90);
+    border-bottom: 2px dotted black;
+}
+
+h3.homebrew {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -1px;
+    text-align: left;
+    padding-left: 5px;
+    border-bottom: 1px dashed black;
+}
+
+h4.homebrew {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -1px;
+    text-align: left;
+    padding-left: 5px;
 }
