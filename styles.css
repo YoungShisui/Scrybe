@@ -315,45 +315,45 @@ p.mapPreview {
     grid-column-start: 3;
 }
 
-.landingParent {
+div.landingParent {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 10px;
+    align-items: center;
+    flex-direction: column;
 }
 
-div.landing {
-    margin: auto;
+div.landingChild {
+    width: 75%;
 }
 
 p.landing {
-    border: 1px solid black;
+    padding: 5px;
     background-color: rgb(255, 246, 196);
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+img.landingImg {
+    width: 100%;
 }
 
 p.update {
     border: 1px solid black;
     background-color: darkorange;
     color: black;
-    align-content: center;
+    text-align: center;
+    align-content: bottom;
 }
 
 .citation {
     font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
     font-size: 12px;
     text-align: center;
-    align-content: center;
+    align-content: bottom;
     border: 1px solid black;
     background-color: rgb(184, 144, 90);
     justify-content: stretch;
 }
-img.mapLanding {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 246, 196);
-}
+
 
 .parentPantheon {
     display: flex;
