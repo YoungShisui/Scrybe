@@ -451,8 +451,17 @@ details.intro {
 
 p.intro {
     padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
 }
 
 button.intro {
     border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(172, 100, 50);
+    color: beige;
+}
+
+button.intro:hover {
+    background-color: rgb(173, 118, 118);
 }
