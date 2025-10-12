@@ -26,15 +26,10 @@ selector.addEventListener('change', (event) => {
  $(this).next("input[type='text']").val(d);
 });
 
-const session01 = [
-            "Dungeon Master: ",
-            "Shamshir: ",
-            "Chronicle: "
-        ];
+function changeText01(text) {
+  document.getElementById('session01').innerHTML=text;
+}
 
-let currentIndex = 0;
-
-function cycleParagraph() {
-    currentIndex = (currentIndex + 1) % session01.length;
-    document.getElementById("sessionDisplay").textContent = session01[currentIndex];
+function changeText02(text) {
+  document.getElementById('session02').innerHTML=text;
 }

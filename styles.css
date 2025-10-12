@@ -49,7 +49,7 @@ ul a {
 
 ul a:hover {
     background-color: rgb(173, 118, 118);
-    color: white;
+    color: black;
 }
 
 .active {
@@ -440,28 +440,48 @@ summary.intro {
     background-color: rgb(184, 144, 90);
     padding: 5px;
     border: 2px solid black;
+    border-bottom: 2px solid black;
+    justify-content: center;
 }
 
 details.intro {
     background-color: rgb(255, 246, 196);
-    margin: 30px;
+    margin: 10px;
+    width: auto;
     font-family: 'Courier New', Courier, monospace;
     border: 2px solid black;
 }
 
 p.intro {
-    padding: 5px;
+    padding-left: 5px;
     font-family: 'Courier New', Courier, monospace;
-    color: #333;
 }
 
-button.intro {
-    border: 1px solid black;
+input.intro {
+    border: 2px solid black;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(172, 100, 50);
     color: beige;
+    font-size: medium;
 }
 
-button.intro:hover {
+input.intro:hover {
     background-color: rgb(173, 118, 118);
+    color:  black;
+}
+
+div.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 2px;
+    gap: 2px;
+}
+
+div.introParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
