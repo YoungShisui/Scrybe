@@ -92,7 +92,12 @@ ul.rules {
     margin: -20px;
 }
 
-
+div.weaponParent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 h2.weapon {
     background-color: rgb(184, 144, 90);
@@ -263,9 +268,9 @@ div.tier {
 .tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
 .tableFixHead tbody th { position: sticky; left: 0; }
 
-table  { border-collapse: collapse; width: 100%; }
-th, td { padding: 8px 16px; }
-th     { background:#eee; }
+table  { border-collapse: collapse; width: 100%;  }
+th, td { padding: 8px 16px; border: 1px solid black; }
+th     { background:rgb(172, 100, 50); border-bottom: 1px solid black; }
 
 p.campaign {
     background-color: rgb(255, 246, 196);
@@ -362,6 +367,8 @@ p.update {
     align-items: stretch;
     flex-wrap: wrap;
     gap: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 div.pantheon {
@@ -394,6 +401,8 @@ div.homebrewParent {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -479,6 +488,14 @@ div.intro {
 }
 
 div.introParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.bestiaryParent {
     display: flex;
     flex-direction: column;
     justify-content: center;
