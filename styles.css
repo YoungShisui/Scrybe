@@ -502,3 +502,8 @@ div.bestiaryParent {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+div.bestiaryChild {
+    display: flex;
+    flex-direction: column;
+}
