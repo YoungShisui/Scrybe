@@ -1,3 +1,7 @@
+/*************\
+  DEFAULTS
+\*************/
+
 h1 {
     font-family: 'Courier New', Courier, monospace;
     color: beige;
@@ -13,6 +17,10 @@ div {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*************\
+  Background
+\*************/
+
 body {
     background-color: rgb(66, 55, 50);
 }
@@ -26,6 +34,10 @@ img.tyrunt {
     width: 50px;
     height: auto;
 }
+
+/*************\
+  DIV SETTINGS
+\*************/
 
 ul {
     list-style-type: none;
@@ -56,6 +68,10 @@ ul a:hover {
     background-color: rgb(172, 100, 50);
     color: white;
 }
+
+/*************\
+  HOUSE RULES
+\*************/
 
 h2.rules {
     background-color: rgb(172, 100, 50);
@@ -152,6 +168,10 @@ table.rules, th.rules, td.rules {
     padding: 10px;
 }
 
+/*************\
+  TOOL TIPS
+\*************/
+
 .tooltip {
   position: relative;
   cursor:help;
@@ -174,6 +194,10 @@ table.rules, th.rules, td.rules {
   pointer-events: none;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/*************\
+ WEAPON SYSTEM
+\*************/
 
 .divTxt {
     width: auto;
@@ -272,6 +296,40 @@ table  { border-collapse: collapse; width: 100%;  }
 th, td { padding: 8px 16px; border: 1px solid black; }
 th     { background:rgb(172, 100, 50); border-bottom: 1px solid black; }
 
+#myInput {
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid black; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+/*************\
+      Maps
+\*************/
+
 p.campaign {
     background-color: rgb(255, 246, 196);
     padding: 5px;
@@ -320,6 +378,10 @@ p.mapPreview {
     grid-column-start: 3;
 }
 
+/*************\
+      HOME
+\*************/
+
 div.landingParent {
     display: flex;
     align-items: center;
@@ -359,6 +421,9 @@ p.update {
     justify-content: stretch;
 }
 
+/*************\
+    PANTHEON
+\*************/
 
 .parentPantheon {
     display: flex;
@@ -396,6 +461,11 @@ h1.pantheon {
 h2.pantheon {
     text-align: center;
 }
+
+
+/*************\
+  HOUSE RULES
+\*************/
 
 div.homebrewParent {
     display: flex;
@@ -444,6 +514,10 @@ h4.homebrew {
     text-align: left;
     padding-left: 5px;
 }
+
+/*************\
+      SoE
+\*************/
 
 summary.intro {
     background-color: rgb(184, 144, 90);
@@ -495,6 +569,10 @@ div.introParent {
     margin-right: 10%;
 }
 
+/*************\
+    BESTIARY
+\*************/
+
 div.bestiaryParent {
     display: flex;
     flex-direction: column;
@@ -507,6 +585,10 @@ div.bestiaryChild {
     display: flex;
     flex-direction: column;
 }
+
+/*************\
+     PC'S
+\*************/
 
 div.playerParent {
     background-color: rgb(255, 246, 196);

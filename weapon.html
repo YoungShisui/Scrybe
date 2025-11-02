@@ -35,7 +35,7 @@
             <div id="tip-rein">Condition; When a creatures is inflicted with the Rein condition, they lose movement by five times (X) feet.</div>
             <div id="tip-flanked">Keyword; When you make a melee attack, for each ally within melee range of the target creature, gain +2 on attack rolls to a max of +6. This number is reduced by -2 for each of the enemies allies that are within 5 feet of the target, to a minimum of 0.</div>
             <div id="tip-meter">Keyword; Weapons with the Meter keyword have a meter equal to the maximum value you can roll on those dice plus half of that value (i.e. greatsword deals 2d6, 6 + 6 = 12, half of 12 = 6, 12 + 6 = 18; meter = 18) To fill the meter, count damage dealt by only your weapons damage die (critical damage not included), when the meter reaches the max value the wielder gains the Flow State condition. This meter resets to 0 when combat ends. If you use an offhanded weapon, calculate the meter for that weapon and compare it to your main weapons meter. The larger value between the meters becomes the value for the combined meter.</div>
-            <div id="tip-flowstate">Condition; The Flow State condition improves certain weapon modifications and alterations.</div>
+            <div id="tip-flowstate">Condition; The Flow State condition improves certain weapon modifications and alterations. See the Meter Keyword for more infomation.</div>
         </div>
 
     <div class="weaponParent">
@@ -47,7 +47,8 @@
             <div>
                 <div class="divTxt">
                     <div class="tableFixHead">
-                        <table>
+                        <input type="text" id="modInput" onkeyup="modFunction()" placeholder="Search by name..." title="Type in a name">
+                        <table id="modTable">
                             <thead>
                                 <tr>
                                     <th>Tier</th><th>Name</th><th>Restrictions</th><th>Effect</th>
@@ -336,7 +337,7 @@
                 <tr class="rules">
                     <td class="rules">Flow State</td>
                     <td class="rules">Condition</td>
-                    <td class="rules">The Flow State condition improves certain weapon modifications and alterations.  </td>
+                    <td class="rules">The Flow State condition improves certain weapon modifications and alterations. See the Meter Keyword for more information. </td>
                 </tr>
             </table>
     </div>
