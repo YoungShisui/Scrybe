@@ -42,6 +42,10 @@ function changeText03(text) {
   document.getElementById('session03').innerHTML=text;
 }
 
+function changeText04(text) {
+  document.getElementById('session04').innerHTML=text;
+}
+
 
 // Searchable Table
 function modFunction() {

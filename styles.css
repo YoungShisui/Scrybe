@@ -594,15 +594,24 @@ div.playerParent {
     background-color: rgb(255, 246, 196);
     border: 3px solid black;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 div.playerChild {
     color: white;
-    background-color: rgb(66, 55, 50);
+    text-align: center;
+    background-color: rgb(40, 90, 62);
+    width: 300px;
     margin: 10px;
     padding: 5px;
     border: 3px solid black;
+}
+
+h2.players {
+    text-align: center;
+    color: bisque;
 }
