@@ -615,3 +615,12 @@ h2.players {
     text-align: center;
     color: bisque;
 }
+
+/*************\
+    Weapon2
+\*************/
+
+div.test-one {
+    background-color: red;
+    color: #ddd;
+}

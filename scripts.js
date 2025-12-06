@@ -1,5 +1,34 @@
-//Tool Tips
+// Weapons
+class Weapon {
+    constructor(name, tier, restriction, effect) {
+        this.name = name;
+        this.tier = tier;
+        this.restriction = restriction;
+        this.effect = effect;
+    }
+    getName() {
+        return this.name;
+    }
+    getTier() {
+        return this.tier;
+    }
+    getRestrict() {
+        return this.restriction;
+    }
+    getEffect() {
+        return this.effect;
+    }
+}
 
+const myInstance = new Weapon("Noble", "henlo", [1,2,3], "Coomer");
+document.getElementById("output").textContent = myInstance.name;
+document.getElementById("output2").textContent = myInstance.tier;
+document.getElementById("output3").textContent = myInstance.restriction;
+document.getElementById("output4").textContent = myInstance.effect;
+
+
+
+//Tool Tips
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-tooltip-id]').forEach(el => {
     const id = el.getAttribute('data-tooltip-id');
@@ -67,3 +96,6 @@ function modFunction() {
     }       
   }
 }
+
+
+
