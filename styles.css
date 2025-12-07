@@ -620,7 +620,49 @@ h2.players {
     Weapon2
 \*************/
 
-div.test-one {
-    background-color: red;
+h3.weaponBox {
     color: #ddd;
+}
+h4.weaponBox {
+    color: #ddd;
+}
+p.weaponBox {
+    color: #ddd;
+}
+div.weaponBox {
+    color: #ddd;
+}
+
+div.weaponParentNew {
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    height: 50vh;
+}
+
+div.weaponChild {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+div.weaponLeft {
+    text-align: center;
+    background-color: rgb(172, 100, 50);
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 8vw;
+}
+
+div.weaponRight {
+    background-color: rgb(255, 246, 196);
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 20vw;
 }
