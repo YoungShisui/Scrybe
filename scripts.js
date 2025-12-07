@@ -116,7 +116,7 @@ document.getElementById("duelist-tier").textContent = duelist.tier;
 document.getElementById("duelist-restrict").textContent = duelist.restriction;
 document.getElementById("duelist-effect").textContent = duelist.effect;
 
-const focused = new Weapon("Focused", "Journeyman", ['All'], "When you achieve flow state</span>, you gain + 1 to all of your saving throws.");
+const focused = new Weapon("Focused", "Journeyman", ['All'], "When you achieve flow state, you gain + 1 to all of your saving throws.");
 document.getElementById("focused-name").textContent = focused.name;
 document.getElementById("focused-tier").textContent = focused.tier;
 document.getElementById("focused-restrict").textContent = focused.restriction;
@@ -128,7 +128,7 @@ document.getElementById("gamblers-tier").textContent = gamblers.tier;
 document.getElementById("gamblers-restrict").textContent = gamblers.restriction;
 document.getElementById("gamblers-effect").textContent = gamblers.effect;
 
-const hazardous = new Weapon("Hazardous", "Journeyman", ['Axes'], "When you make a weapon attack, you may add your skill to the damage dealt. If you do, incur a -X to your attack roll; where X equals 5 - your CON modifier.");
+const hazardous = new Weapon("Hazardous", "Journeyman", ['Axes'], "Once per turn, when you make a weapon attack you may add your skill to the damage dealt. If you do, incur a -X to your attack roll; where X equals 5 - your CON modifier.");
 document.getElementById("hazardous-name").textContent = hazardous.name;
 document.getElementById("hazardous-tier").textContent = hazardous.tier;
 document.getElementById("hazardous-restrict").textContent = hazardous.restriction;
@@ -263,7 +263,7 @@ document.getElementById("compound-effect").textContent = compound.effect;
 
 //Weapon Mod Searchbox
 document.addEventListener('DOMContentLoaded', () => {
-        const searchBar = document.getElementById('searchBar');
+        const searchBar = document.getElementById('weaponSearch');
         const contentContainer = document.getElementById('contentContainer');
         const searchableItems = contentContainer.getElementsByClassName('searchableItem');
 

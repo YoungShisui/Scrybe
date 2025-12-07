@@ -620,35 +620,32 @@ h2.players {
     Weapon2
 \*************/
 
-h3.weaponBox {
+h3.weaponName {
+    color: white;
+    text-transform:uppercase;
+}
+h4.weaponTier {
+    color: burlywood;
+}
+p.weaponRestrict {
     color: #ddd;
 }
-h4.weaponBox {
-    color: #ddd;
-}
-p.weaponBox {
-    color: #ddd;
-}
-div.weaponBox {
-    color: #ddd;
+input.searchBox {
+    text-align: center;
 }
 
 div.weaponParentNew {
-    background-color: black;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow-y: auto;
+    display: flexbox;
+    align-content: center;
     height: 50vh;
+    overflow-y: auto;
 }
 
 div.weaponChild {
-    background-color: green;
+    margin: 5px;
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    padding-left: 15vw;
 }
 
 div.weaponLeft {
@@ -656,7 +653,9 @@ div.weaponLeft {
     background-color: rgb(172, 100, 50);
     padding-left: 5px;
     padding-right: 5px;
-    width: 8vw;
+    width: 20vh;
+    border: solid black 2px;
+    border-right: solid black 0px;
 }
 
 div.weaponRight {
@@ -664,5 +663,6 @@ div.weaponRight {
     text-align: left;
     padding-top: 10px;
     padding-left: 5px;
-    width: 20vw;
+    width: 80vh;
+    border: solid black 2px;
 }
