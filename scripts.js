@@ -20,7 +20,7 @@ class Weapon {
     }
 }
 
-const adaptive = new Weapon("Adaptive", "Amatuer", ['All'], "When you fail an attack roll against a creature, roll a 1d6 and add that to your next melee attack roll you make against that same creature. You may use this modification a number of times equal to your INT modifier to a minimum of 1. Uses replenish after a short rest.Once per turn, you may make a melee weapon attack against a creature 10 ft. away from you. If you do, incur a -3 to your AC when a creature attacks you from 5 ft. away.");
+const adaptive = new Weapon("Adaptive", "Amatuer", ['All','All','All'], "When you fail an attack roll against a creature, roll a 1d6 and add that to your next melee attack roll you make against that same creature. You may use this modification a number of times equal to your INT modifier to a minimum of 1. Uses replenish after a short rest.Once per turn, you may make a melee weapon attack against a creature 10 ft. away from you. If you do, incur a -3 to your AC when a creature attacks you from 5 ft. away.");
 document.getElementById("adaptive-name").textContent = adaptive.name;
 document.getElementById("adaptive-tier").textContent = adaptive.tier;
 document.getElementById("adaptive-restrict").textContent = adaptive.restriction;

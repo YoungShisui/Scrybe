@@ -624,28 +624,31 @@ h3.weaponName {
     color: white;
     text-transform:uppercase;
 }
-h4.weaponTier {
-    color: burlywood;
+h4.weaponBox {
+    color: #ddd;
 }
 p.weaponRestrict {
     color: #ddd;
 }
-input.searchBox {
-    text-align: center;
+div.weaponBox {
+    color: #ddd;
 }
 
 div.weaponParentNew {
-    display: flexbox;
-    align-content: center;
-    height: 50vh;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     overflow-y: auto;
 }
 
 div.weaponChild {
-    margin: 5px;
+    background-color: green;
     display: flex;
     flex-direction: row;
-    padding-left: 15vw;
+    margin: 5px;
 }
 
 div.weaponLeft {
@@ -653,16 +656,15 @@ div.weaponLeft {
     background-color: rgb(172, 100, 50);
     padding-left: 5px;
     padding-right: 5px;
-    width: 20vh;
-    border: solid black 2px;
-    border-right: solid black 0px;
+    width: 8vw;
 }
 
 div.weaponRight {
     background-color: rgb(255, 246, 196);
     text-align: left;
-    padding-top: 10px;
+    width: 60vw;
     padding-left: 5px;
-    width: 80vh;
-    border: solid black 2px;
+    width: 20vw;
 }
+
+        
