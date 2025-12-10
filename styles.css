@@ -632,6 +632,17 @@ p.weaponRestrict {
 div.weaponEffect {
     word-wrap: break-word;
 }
+p,
+h2,
+h3.weaponRules {
+    color: black;
+    padding-left: 10px;
+    
+}
+div.weaponRules {
+    background-color: rgb(255, 246, 196);
+    border: solid black 2px;
+}
 
 div.weaponParentNew {
     margin-top: -21px;
