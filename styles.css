@@ -621,50 +621,76 @@ h2.players {
 \*************/
 
 h3.weaponName {
-    color: white;
     text-transform:uppercase;
 }
-h4.weaponBox {
-    color: #ddd;
+h4.weaponTier {
+    word-wrap: break-word;
 }
 p.weaponRestrict {
-    color: #ddd;
+    word-wrap: break-word;
 }
-div.weaponBox {
-    color: #ddd;
+div.weaponEffect {
+    word-wrap: break-word;
 }
 
 div.weaponParentNew {
-    background-color: black;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow-y: auto;
+    margin-top: -21px;
+    overflow-y: scroll;
+    height: 65vh;
 }
 
 div.weaponChild {
-    background-color: green;
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    border: solid black 2px;
+}
+
+div.weaponChild:nth-child(2n+2) {
+    color: black;
+    background-color: rgb(255, 246, 196);
+}
+
+div.weaponChild:nth-child(2n+1) {
+    color: black;
+    background-color: rgb(254, 229, 160);
 }
 
 div.weaponLeft {
     text-align: center;
-    background-color: rgb(172, 100, 50);
     padding-left: 5px;
     padding-right: 5px;
-    width: 8vw;
-}
-
-div.weaponRight {
-    background-color: rgb(255, 246, 196);
-    text-align: left;
-    width: 60vw;
-    padding-left: 5px;
     width: 20vw;
 }
 
-        
+div.weaponMiddle {
+    text-align: center;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    width: 20vw;
+    overflow-x: auto;
+    padding: 5px;
+}
+
+div.weaponRight {
+    text-align: left;
+    padding: 5px;
+    width: 47vw;
+}
+
+div.weaponContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.weaponNAV {
+    background-color: rgb(31, 36, 40);
+    display: flex;
+    flex-direction: column;
+    margin-top: -21px;
+}
+
+ul.weaponNAV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
