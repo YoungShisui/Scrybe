@@ -645,16 +645,7 @@ div.weaponParentNew {
 }
 
 div.weaponChild {
-    display: flex;
-    flex-direction: column;
-}
-
-p.weaponParentNew:nth-child(odd) {
-    background-color: red;
-}
-
-div.weaponGrandchild {
-    text-align: center;
+    background-color: green;
     display: flex;
     flex-direction: row;
     margin: 5px;
