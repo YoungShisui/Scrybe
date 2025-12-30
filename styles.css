@@ -591,8 +591,6 @@ div.bestiaryChild {
 \*************/
 
 div.playerParent {
-    background-color: rgb(255, 246, 196);
-    border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -604,8 +602,8 @@ div.playerParent {
 div.playerChild {
     color: white;
     text-align: center;
-    background-color: rgb(40, 90, 62);
-    width: 300px;
+    background-color: rgb(85, 98, 67);
+    width: 400px;
     margin: 10px;
     padding: 5px;
     border: 3px solid black;
